@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duebell Skill Privacy Policy / プライバシーポリシー</title>
+<style>
+  /* Duebell Fleet の privacy.html と同じ構成。色はアプリの画面（生成り・墨・朱）に揃える */
+  :root { --ink:#2B2A26; --accent:#B8432F; --line:#CFC8B8; --soft:#6B665C; --paper:#F4F1EA; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI","Meiryo","Yu Gothic UI",system-ui,sans-serif;
+    color: var(--ink); line-height: 1.75; margin: 0;
+    background: var(--paper);
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 32px 22px 64px; }
+  header { border-bottom: 3px solid var(--ink); padding-bottom: 14px; margin-bottom: 8px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h1 .brand { font-family: "Bahnschrift","Segoe UI",sans-serif; letter-spacing: 1px; }
+  .meta { color: var(--soft); font-size: .9rem; }
+  .summary { background:#FBF9F4; border:1px solid var(--line); border-left:5px solid var(--accent);
+             border-radius:6px; padding:12px 16px; margin:16px 0; font-weight:600; }
+  h2 { color: var(--accent); font-size: 1.25rem; margin: 40px 0 6px; }
+  h3 { font-size: 1.02rem; margin: 22px 0 4px; border-left: 4px solid var(--accent); padding-left: 8px; }
+  p, li { font-size: .98rem; }
+  code { background:#ECE7DC; padding:1px 6px; border-radius:4px; font-family:Consolas,monospace; font-size:.9em; word-break: break-all; }
+  hr { border:none; border-top:1px solid var(--line); margin:36px 0; }
+  .lang-divider { text-align:center; color:var(--soft); font-size:.85rem; letter-spacing:2px; margin:8px 0; }
+  footer { margin-top: 40px; color: var(--soft); font-size:.85rem; text-align:center; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="brand">Duebell Skill</span> &mdash; プライバシーポリシー / Privacy Policy</h1>
+    <div class="meta">最終更新日 / Last updated: 2026-10-16 ・ 発行者 / Publisher: <strong>G-Works</strong></div>
+  </header>
+
+  <!-- ================= 日本語 ================= -->
+  <h2>日本語</h2>
+  <h3>はじめに</h3>
+  <p>Duebell Skill（以下「本アプリ」）は、社員の免許・技能講習・特別教育などの資格と、機械に必要な資格を持つ人の人数・講習の期限を管理する Windows 用のデスクトップアプリです。本ポリシーは、本アプリにおける情報の取り扱いを説明します。</p>
+  <div class="summary">本アプリは個人情報を一切収集・送信・共有しません。入力したデータはすべて利用者のデバイス（または利用者が指定したフォルダ）内にのみ保存されます。</div>
+
+  <h3>1. 収集する情報</h3>
+  <ul>
+    <li>本アプリは利用者の個人情報を収集しません。</li>
+    <li>利用者が入力した次のデータは、利用者のデバイス内のデータベースファイル（既定は「ドキュメント」フォルダの <code>DuebellSkill\duebell_assets.db</code>。Duebell IT・Asset・Facility と同じ形式。または利用者が指定した共有フォルダなど）にのみ保存されます：
+      <ul>
+        <li>人の情報（氏名、社員番号、部署、拠点、入社日、在籍・退職、メモ）。<b>生年月日・住所・電話番号・健康情報・写真は扱いません</b>（入力欄もありません）</li>
+        <li>人ごとの資格（資格の種類、取得日、修了証・免許証の番号、交付者・講習機関、講習の受講日、従事の有無、取り消し・返納、備考）</li>
+        <li>機械（管理番号、名称、種類、能力、場所）、社内で実施した特別教育の記録（実施日、科目、時間、講師、場所、受講者と修了の有無）、作業主任者の選任（作業、場所、選任者、期間）</li>
+        <li>利用者が添付したファイル（修了証・免許証の写し、特別教育の資料など）。データベースと同じ場所の <code>attachments\skill</code> フォルダに写して保存します</li>
+        <li>資格テンプレート・機械に必要な資格・作業・期限の日数など、利用者が入れた設定</li>
+        <li>自動・手動のバックアップ（データベースと同じ場所の <code>backup</code> フォルダ。添付ファイルは同じ世代の zip）</li>
+      </ul>
+    </li>
+    <li>次回起動時に同じ状態で開く目的で、表示言語・同意した免責事項の版・列の幅・バックアップの控えの保存先が、本アプリの設定ファイル（<code>duebell_assets.ini</code>。Microsoft Store 版ではアプリ専用の領域）に保存されます。</li>
+    <li><b>Duebell IT・Asset・Facility との共有</b>：利用者が同じデータベースファイルを選んだ場合、本アプリとそれらが同じファイルを読み書きします。人の一覧は Duebell IT・Asset と共通です。Duebell Asset が取り込んだ機械の情報を読みます。いずれも利用者のデバイス（または指定したフォルダ）の中だけで行われます。</li>
+    <li>共有フォルダで使う場合、同時編集を防ぐためのロックファイルに、編集中の PC 名・Windows のユーザー名・時刻が書かれます。これは同じフォルダを使う利用者に「誰が編集中か」を示すためだけに使われます。</li>
+    <li>社員の氏名・資格など、利用者が入力した従業員の情報は、上記のデータベースにのみ保存されます。必要な範囲（氏名・社員番号・部署・資格）だけを扱う設計です。</li>
+    <li>これらのファイルが外部へ送信されることはなく、開発者がアクセスすることもできません。</li>
+  </ul>
+
+  <h3>2. 利用目的</h3>
+  <p>上記のデータは、本アプリの機能（資格の台帳と一覧表、機械に必要な資格を持つ人数と講習の期限の目安、特別教育・選任の記録と添付ファイルの保管、記録の出力、表示・設定の復元、共有フォルダでのロック）を提供するためだけに使われます。それ以外の目的には使われません。</p>
+
+  <h3>3. ネットワーク・オンラインサービス</h3>
+  <p>本アプリはインターネットに接続せずに動作します。テレメトリ・利用解析（アナリティクス）・広告・トラッキング・ユーザーアカウントの仕組みを一切含みません。講習機関への申込みや外部サービスとのデータ連携も行いません。</p>
+  <p>Microsoft Store 版では、試用期間とライセンスの確認、および購入を Windows と Microsoft Store の仕組みを通じて行います。これに伴う情報の取り扱いは <a href="https://privacy.microsoft.com/privacystatement">Microsoft のプライバシーに関する声明</a>に従います。</p>
+
+  <h3>4. 第三者への提供</h3>
+  <p>本アプリはデータを収集しないため、いかなるデータも第三者へ販売・提供・開示しません。</p>
+
+  <h3>5. 書き出し機能について</h3>
+  <p>CSV・印刷用 HTML への書き出しは、利用者が明示的に操作したときにのみ実行され、書き出し先は利用者が指定した場所（印刷用 HTML は一時フォルダ）です。本アプリが自動で送信することはありません。</p>
+
+  <h3>6. データの保存期間と削除</h3>
+  <p>データは、利用者が削除するまで保存されます。資格・特別教育・選任の記録は、退職後や保存期間を過ぎても本アプリが自動で削除することはありません。本アプリをアンインストールしても、業務データを失わないようデータベース・添付ファイル・バックアップ（「ドキュメント」フォルダの <code>DuebellSkill</code>）は残ります。不要になったら利用者がフォルダごと削除してください（Duebell IT・Asset・Facility と共有している場合は、それらのデータも含まれます）。設定ファイルはアンインストール時に削除されます。</p>
+
+  <h3>7. セキュリティ</h3>
+  <p>データは利用者のデバイスまたは利用者が指定したフォルダにのみ保存されるため、その安全性は利用者のデバイス・ネットワークのセキュリティ対策に依存します。</p>
+
+  <h3>8. 子どものプライバシー</h3>
+  <p>本アプリは、子どもを含むいかなる利用者からも情報を収集しません。</p>
+
+  <h3>9. 本ポリシーの変更</h3>
+  <p>本ポリシーは必要に応じて改定することがあります。最新版はこのページに掲載します。</p>
+
+  <h3>10. お問い合わせ</h3>
+  <p>本ポリシーや本アプリに関するお問い合わせ先：<a href="mailto:G.Works.902@gmail.com">G.Works.902@gmail.com</a></p>
+
+  <hr>
+  <div class="lang-divider">— ENGLISH —</div>
+
+  <!-- ================= English ================= -->
+  <h2>English</h2>
+  <h3>Introduction</h3>
+  <p>Duebell Skill ("the App") is a Windows desktop application that keeps the qualifications of a company's staff (licences, skill courses, special education), how many people can run each machine, and course deadlines. This policy explains how the App handles information.</p>
+  <div class="summary">The App does not collect, transmit, or share any personal data. Everything you enter is stored only on your device (or in a folder you choose).</div>
+
+  <h3>1. Information we collect</h3>
+  <ul>
+    <li>The App does not collect any personal information.</li>
+    <li>The data you enter is stored in a database file on your device (by default <code>DuebellSkill\duebell_assets.db</code> in your Documents folder, the same format as Duebell IT's, Asset's and Facility's, or another location you choose, such as a shared folder):
+      <ul>
+        <li>People (name, employee number, department, site, date joined, current or left, memo). <b>No birth date, address, phone number, health data or photo</b> (there are no fields for them)</li>
+        <li>Qualifications held (kind, date acquired, certificate number, issuer or training body, course dates, engaged or not, revoked, notes)</li>
+        <li>Machines (code, name, kind, capacity, place), in-house training records (date, subjects, hours, instructor, place, attendees and completion) and appointed chiefs (work, place, appointee, period)</li>
+        <li>Files you attach (copies of certificates, training material), copied into an <code>attachments\skill</code> folder next to the database</li>
+        <li>Your settings: qualification templates, machine requirements, works, due thresholds</li>
+        <li>Automatic and manual backups (a <code>backup</code> folder next to the database; attachments in a zip of the same generation)</li>
+      </ul>
+    </li>
+    <li>To open the App the way you left it, the display language, the version of the accepted disclaimer, column widths and the second backup folder are stored in the App's settings file (<code>duebell_assets.ini</code>; in the Microsoft Store version, in the App's own storage).</li>
+    <li><b>Sharing with Duebell IT, Asset and Facility</b>: when you choose the same database file, the App and those applications read and write that file. People are shared with Duebell IT / Asset; machines imported by Duebell Asset are read. This happens only on your device (or in the folder you chose).</li>
+    <li>When the database is in a shared folder, a lock file records the editing PC's name, the Windows user name and the time, to prevent simultaneous editing. It is used only to show other users of the same folder who is editing.</li>
+    <li>Staff details you enter are stored only in the database above; the App only handles what it needs (name, number, department, qualifications).</li>
+    <li>These files never leave your device, and the developer cannot access them.</li>
+  </ul>
+
+  <h3>2. How we use information</h3>
+  <p>The data is used only to provide the App's functionality (keeping the qualification ledger and matrix, counting who can run each machine and estimating course deadlines, keeping training and appointment records and attachments, exporting records, restoring the display and settings, and locking a shared database). It is not used for any other purpose.</p>
+
+  <h3>3. Network and online services</h3>
+  <p>The App works without an internet connection. It contains no telemetry, analytics, advertising, tracking or user accounts. It does not book courses and exchanges no data with outside services.</p>
+  <p>In the Microsoft Store version, the trial period, the licence check and purchases are handled by Windows and the Microsoft Store; the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a> applies.</p>
+
+  <h3>4. Sharing with third parties</h3>
+  <p>Because the App does not collect data, it does not sell, share or disclose any data to third parties.</p>
+
+  <h3>5. Export features</h3>
+  <p>Export to CSV and printable HTML runs only when you ask for it, and writes to the location you choose (printable HTML goes to the temporary folder). The App never transmits anything.</p>
+
+  <h3>6. Retention and deletion</h3>
+  <p>Data is kept until you delete it; the App never deletes qualification, training or appointment records automatically, also after someone leaves. Uninstalling the App leaves the database, attachments and backups (the <code>DuebellSkill</code> folder in Documents) in place so that business data is not lost; delete the folder when you no longer need it (if it is shared with Duebell IT / Asset / Facility, it holds their data too). The settings file is removed with the App.</p>
+
+  <h3>7. Security</h3>
+  <p>Data is stored only on your device or in a folder you choose, so its security depends on the security measures of your device and network.</p>
+
+  <h3>8. Children's privacy</h3>
+  <p>The App does not collect information from anyone, including children.</p>
+
+  <h3>9. Changes to this policy</h3>
+  <p>This policy may be updated as needed. The latest version is always published on this page.</p>
+
+  <h3>10. Contact</h3>
+  <p>Questions about this policy or the App: <a href="mailto:G.Works.902@gmail.com">G.Works.902@gmail.com</a></p>
+
+  <footer>&copy; 2026 G-Works &nbsp;&middot;&nbsp; Duebell Skill</footer>
+</div>
+</body>
+</html>
